@@ -1,0 +1,160 @@
+.question--title {
+  justify-content: center;
+}
+
+/* Q1 */
+.box1 {
+  width: 400px;
+  height: 400px;
+  background: #ff0000;
+  display: inline-block;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 960px) {
+  .box1 {
+  width: 200px;
+  height: 200px;
+  }
+}
+
+/* Q2 */
+.box2 {
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+}
+@media screen and (max-width: 960px) {
+  .box2 {
+  background: #007bff;
+  }
+}
+
+/* Q3 */
+.blue {
+  background: #0008ff;
+  margin: 0px 75px;
+}
+.green {
+  background: #22ff00;
+  margin: 0px 75px;
+}
+
+@media screen and (max-width: 960px) {
+  .blue {
+  margin: 0px 25px;
+  }
+  .green {
+    margin: 0px 25px;
+  }
+}
+
+
+/* Q4 */
+
+.float-red {
+  background: #ff0000;
+  float: left;
+}
+.float-blue {
+  background: #0008ff;
+  float: left;
+}
+
+.clearfix {
+  width: 600px;
+  margin: 0 auto;
+}
+.clearfix:after {
+	clear: left;
+  content: " ";
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+  .float-red {
+    float: none;
+  }
+  .float-blue {
+    float: none;
+  }
+}
+
+/* Q5 */
+.flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.itemA {
+  background: #ff0000;
+}
+.itemB {
+  background: #0008ff;
+}
+.itemC {
+  background: #ff8400;
+}
+@media screen and (max-width: 960px){
+  .itemA  {
+    order: 3;
+  }
+  .itemB {
+    order: 2;
+  }
+  .itemC {
+    order: 1;
+  }
+}
+
+/* Q6 */
+.item1 {
+  background: #00ff51;
+}
+.item2 {
+  background: #d4ff00;
+}
+.item3 {
+  background: #ff00e1;
+}
+@media screen and (max-width: 960px){
+  .item1  {
+    order: 1;
+  }
+  .item2 {
+    order: 2;
+  }
+  .item3 {
+    order: 0;
+  }
+}
+
+/* Q7 */
+.item4 {
+  background: #ff0000;
+}
+.item5 {
+  background: #0008ff;
+  display: none;
+}
+.item6 {
+  background: #00ff51;
+}
+
+@media screen and (max-width: 960px){
+  .item5  {
+    display: block;
+  }
+  .item4  {
+    display: none;
+  }
+}
